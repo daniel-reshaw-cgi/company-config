@@ -30,4 +30,4 @@ spring:
 spring:
   profiles: cloud
 
-message: DJ
+message: DJ changed this
