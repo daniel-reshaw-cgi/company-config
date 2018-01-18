@@ -6,11 +6,11 @@ info:
 ---  
 spring:
   profiles: cloud
-  
-  eureka.instance.hostname: ${vcap.application.eureka-dr.uris}
-  eureka.instance.nonSecurePort: 80
-  
+    
   eureka:
     client:
       serviceUrl:
         defaultZone: http://ceureka:cpassword@http://eureka-dr-restless-gnu.cfapps.io/eureka
+    instance:
+      hostname: ${vcap.application.eureka-dr.uris}
+      nonSecurePort: 80 
