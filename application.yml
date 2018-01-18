@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ceureka:cpassword@http://eureka-dr-restless-gnu.cfapps.io/eureka
+      defaultZone: http://ceureka:cpassword@eureka-dr-restless-gnu.cfapps.io/eureka
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80 
