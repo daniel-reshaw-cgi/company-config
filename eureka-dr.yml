@@ -18,5 +18,5 @@ eureka:
 
 security:
   user:
-    name: ceureka
-    password: cpassword
+    name: ${vcap.services.eureka-basic-auth.credentials.username}
+    password: ${vcap.services.eureka-basic-auth.credentials.password}
