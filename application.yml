@@ -12,5 +12,5 @@ eureka:
     serviceUrl:
       defaultZone: http://ceureka:cpassword@http://eureka-dr-restless-gnu.cfapps.io/eureka
   instance:
-    hostname: ${vcap.application.eureka-dr.uris}
+    hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80 
